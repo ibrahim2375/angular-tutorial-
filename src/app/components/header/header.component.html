@@ -1,0 +1,10 @@
+<div class="header">
+  <p>{{ title }}</p>
+  <button routerLink="/about">about</button>
+  <app-button
+    *ngIf="onRouter('/')"
+    color="{{ showAddTask ? 'red' : 'black' }}"
+    txt="{{ showAddTask ? 'Close' : 'Add' }}"
+    (btnClick)="onToggle()"
+  ></app-button>
+</div>

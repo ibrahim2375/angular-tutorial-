@@ -1,0 +1,17 @@
+.task {
+  position: relative;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.task .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 30px;
+}
+.checked {
+  border-left: 3px solid green;
+}

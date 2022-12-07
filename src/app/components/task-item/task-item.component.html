@@ -1,0 +1,15 @@
+<div
+  [ngClass]="{ checked: task.checked }"
+  class="task"
+  (dblclick)="onToggleCheck(task)"
+>
+  <p class="close">
+    <fa-icon
+      (click)="onDelete(task)"
+      [icon]="faTimes"
+      [ngStyle]="{ color: 'red' }"
+    ></fa-icon>
+  </p>
+  <h2>{{ task.text }}</h2>
+  <p>{{ task.checked ? "yes" : "No" }}</p>
+</div>

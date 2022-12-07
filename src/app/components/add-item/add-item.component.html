@@ -1,0 +1,18 @@
+<form *ngIf="showAddTask" (ngSubmit)="onSubmit()" id="addForm">
+  <div class="form-control">
+    <label for="">Task</label>
+    <input
+      type="text"
+      name="text"
+      id="text"
+      class="text"
+      placeholder="Task"
+      [(ngModel)]="text"
+    />
+  </div>
+  <div class="form-control">
+    <label for="">check</label>
+    <input type="checkbox" name="checked" id="checked" [(ngModel)]="checked" />
+  </div>
+  <input type="submit" name="submit" id="submit" class="btn" value="add" />
+</form>
